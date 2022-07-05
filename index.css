@@ -214,7 +214,7 @@ nav>a:hover{
     justify-items: center;
     text-align: center;
     margin: 20px;
-    padding: 20px 80px 20px 20px;
+    padding: 20px;
     right: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -247,7 +247,7 @@ footer{
     background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
     .checkbtn{
         display: block;
     }
@@ -280,15 +280,18 @@ footer{
         transition: all .2s;
 
     }
-
-    
-
-}
-@media (max-width:768px) {
+    section{
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
     .imagenes{
         grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     }
     .menu{
         text-transform:capitalize;
     }
+    
+
 }
