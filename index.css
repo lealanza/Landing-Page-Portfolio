@@ -132,7 +132,7 @@ nav>a:hover{
 .cards:hover{
     transition: transform 0.5s;
     transform: scale(1.5);
-    z-index: 100;
+    
     background: #0052D4;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -340,6 +340,7 @@ footer{
         margin: 0;
     }
 
+
     #check:checked ~ .menu{
         left: 0;
         transition: all .2s;
@@ -366,4 +367,10 @@ footer{
     }
    
 
+}
+
+@media (max-width:600px){
+    .home img{
+        display: none;
+    }
 }
